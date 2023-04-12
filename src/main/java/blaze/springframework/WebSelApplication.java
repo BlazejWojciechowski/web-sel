@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WebSelApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WebSelApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WebSelApplication.class, args);
+    }
 
 }
