@@ -1,4 +1,4 @@
-package blaze.springframework;
+package blaze.springframework.basic;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;

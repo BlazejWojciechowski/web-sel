@@ -1,4 +1,4 @@
-package blaze.springframework;
+package blaze.springframework.basic;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
