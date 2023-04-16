@@ -1,6 +1,5 @@
 package blaze.springframework.browser;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -62,6 +61,28 @@ public class CssSelectorTest {
         By allFormFromLabel = By.cssSelector("label ~ form");
         driver.findElement(allFormFromLabel);
          */
+
+        /*
+        By attrTag = By.cssSelector("input[name='fname']");
+        driver.findElement(attrTag);
+         */
+
+        /*
+        By firstChild = By.cssSelector("li:first-child");
+        driver.findElement(firstChild);
+         */
+
+        /*
+        By lastChild = By.cssSelector("li:last-child");
+        driver.findElement(lastChild);
+         */
+
+        /*
+        By thirdChild = By.cssSelector("li:nth-child(3)");
+        driver.findElement(thirdChild);
+         */
+
+
     }
 
     public WebDriver getDriver(String browser) {
