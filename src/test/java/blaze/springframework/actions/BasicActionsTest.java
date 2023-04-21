@@ -23,7 +23,10 @@ public class BasicActionsTest {
         WebElement userNameInput = driver.findElement(By.name("username"));
                    userNameInput.clear();
                    userNameInput.sendKeys("admin");
-                   //userNameInput.sendKeys(Keys.ENTER);
+                   userNameInput.sendKeys(Keys.ENTER);
+                   Alert firstAlert = driver.switchTo().alert();
+                   firstAlert.accept();
+                   driver.switchTo().alert().accept();
 
         driver.findElement(By.cssSelector("[type='checkbox']")).click();
         driver.findElement(By.cssSelector("[value='male']")).click();
