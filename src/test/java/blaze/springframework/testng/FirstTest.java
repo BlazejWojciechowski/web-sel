@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 
@@ -26,8 +27,12 @@ public class FirstTest extends BaseTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("p")));
         driver.findElement(By.cssSelector("p"));
 
+        SoftAssert softAssert = new SoftAssert();
+
         String paraText = driver.findElement(By.cssSelector("p")).getText();
+        softAssert.assertEquals(paraText, "Elo.");
         Assert.assertEquals(paraText, "Dopiero się pojawiłem!");
+        softAssert.assertTrue(true, "Dopiero się pojawiłem!");
 
         driver.quit();
     }
