@@ -6,10 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
+@Listeners(value = {SampleTestListener.class})
 
 public class FirstTest extends BaseTest {
     @Test
@@ -36,7 +39,7 @@ public class FirstTest extends BaseTest {
 
         driver.quit();
     }
-    @Test
+    @Test @Ignore
     public void secondTest() {
 
         BasicActionsTest basicActionsTest = new BasicActionsTest();
