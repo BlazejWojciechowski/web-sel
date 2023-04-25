@@ -26,6 +26,8 @@ public class SecondTest extends BaseTest {
 
 
         driver.findElement(By.cssSelector("p"));
+
+        driver.quit();
     }
     @Test
     public void secondTest() {
@@ -43,5 +45,7 @@ public class SecondTest extends BaseTest {
 
 
         driver.findElement(By.cssSelector("p"));
+
+        driver.quit();
     }
 }

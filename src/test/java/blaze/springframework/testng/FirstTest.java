@@ -28,6 +28,8 @@ public class FirstTest extends BaseTest {
 
         String paraText = driver.findElement(By.cssSelector("p")).getText();
         Assert.assertEquals(paraText, "Dopiero się pojawiłem!");
+
+        driver.quit();
     }
     @Test
     public void secondTest() {
@@ -45,5 +47,7 @@ public class FirstTest extends BaseTest {
 
 
         driver.findElement(By.cssSelector("p"));
+
+        driver.quit();
     }
 }
